@@ -1,3 +1,5 @@
+#사탕게임
+
 N = int(input())
 candy=[]
 Max_candy=0
