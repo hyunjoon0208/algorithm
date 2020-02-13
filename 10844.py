@@ -12,11 +12,12 @@ for i in range(1,101):
             result[i][j]=1
         else:
             if j==0:
-                result[i][j]=result[i-1][j+1]
+                result[i][j]=result[i-1][1]
             elif j==9:
-                result[i][j]=result[i-1][j-1]
+                result[i][j]=result[i-1][8]
             else:
                 result[i][j]=result[i-1][j+1]+result[i-1][j-1]
-
+        
+        print(result[i][j])
 
 print(sum(result[n][1:10])%1000000000)
